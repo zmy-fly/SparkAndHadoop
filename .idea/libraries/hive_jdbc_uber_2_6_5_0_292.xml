@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hive-jdbc-uber-2.6.5.0-292">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/hive-jdbc-uber-2.6.5.0-292.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
