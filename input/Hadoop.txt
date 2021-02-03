@@ -1,0 +1,13 @@
+Q1. 下列关于Flink barrier描述错误的是（）
+A.barrier周期性的插入到数据流中，并作为数据流的一部分随之流动
+B.barrier是Flink快照的核心
+C.一个barrier将本周期快照的数据与下一周期快照的数据分隔开来
+D.在插入barrier的时候，会暂时阻断数据流
+
+Answer:D
+
+Q2. FusionInsight HD的Streaming对于Zookeeper弱依赖，即使Zookeeper故障Streaming可以正常提供服务。
+A.对
+B.错
+
+Answer:B

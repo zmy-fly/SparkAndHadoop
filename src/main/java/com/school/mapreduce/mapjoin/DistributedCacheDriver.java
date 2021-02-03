@@ -22,12 +22,10 @@ public class DistributedCacheDriver {
 
 		Configuration configuration = new Configuration();
 		Job job = Job.getInstance(configuration);
-
 		job.setJarByClass(DistributedCacheDriver.class);
 		job.setMapperClass(DistributedCacheMapper.class);
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(NullWritable.class);
-
 		Path inputPath = new Path("D:\\HdfsClientDemo\\input");
 		Path outputPath = new Path("D:\\HdfsClientDemo\\output");
 		FileSystem fs = FileSystem.get(configuration);

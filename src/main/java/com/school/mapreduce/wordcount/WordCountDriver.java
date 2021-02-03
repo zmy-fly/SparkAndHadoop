@@ -26,14 +26,14 @@ public class WordCountDriver {
         job.setJarByClass(WordCountDriver.class);
         job.setMapperClass(WordCountMapper.class);
         job.setReducerClass(WordCountReducer01.class);
-//        job.setPartitionerClass(WordCountPartitioner01.class);
-//        job.setNumReduceTasks(1);
+        job.setPartitionerClass(WordCountPartitioner01.class);
+        job.setNumReduceTasks(3);
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(IntWritable.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
         FileSystem fs = FileSystem.get(configuration);
-        Path path = new Path("D:\\HdfsClientDemo\\output");
+        Path path = new Path("D:\\output");
 
         if(fs.exists(path)){
             fs.delete(path, true);

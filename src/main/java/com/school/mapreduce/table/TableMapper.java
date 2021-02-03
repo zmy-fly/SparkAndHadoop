@@ -35,7 +35,6 @@ public class TableMapper extends Mapper<LongWritable, Text, Text, TableBean> {
 		}else {
 			String[] split = line.split("\t");
 			tb.setpId(split[0]);
-			System.out.println(split[1]);
 			tb.setpName(split[1]);
 			tb.setAmount(0);
 			tb.setFlag("pd");
